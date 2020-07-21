@@ -23,7 +23,7 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
-// @route   POST api/aith
+// @route   POST api/auth
 // @desc    Authenticate user & get token
 // @access  Public
 router.post(
@@ -82,6 +82,7 @@ router.post(
           res.json({ token });
         }
       );
+      // res.send({ token });
     } catch (err) {
       console.error(err.message);
       res.status(500).send('Server error');
