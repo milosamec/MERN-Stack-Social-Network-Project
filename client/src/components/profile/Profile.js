@@ -25,7 +25,7 @@ const Profile = ({
         <Spinner />
       ) : (
         <Fragment>
-          <Link to="/profiles" className="btn btn-light">
+          <Link style={{marginTop: "6rem"}} to="/profiles" className="btn btn-light">
             Back TO Profiles
           </Link>
           {auth.isAuthenticated &&

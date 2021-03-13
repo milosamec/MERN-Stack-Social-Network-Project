@@ -15,7 +15,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
     <Spinner />
   ) : (
     <Fragment>
-      <h1 className="large text-primary">
+      <h1 style={{marginTop: "6rem"}} className="large text-primary">
         <p className="lead">
           <i className="fas fa-user"></i>Welcome to the community
         </p>

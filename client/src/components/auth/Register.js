@@ -57,12 +57,12 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   };
 
   if (isAuthenticated) {
-    return <Redirect to="/dasboard" />;
+    return <Redirect to="/dashboard" />;
   }
 
   return (
     <Fragment>
-      <h1 className="large text-primary">Sign Up</h1>
+      <h1 style={{marginTop: "6rem"}} className="large text-primary">Sign Up</h1>
       <p className="lead">
         <i className="fas fa-user"></i> Create Your Account
       </p>
