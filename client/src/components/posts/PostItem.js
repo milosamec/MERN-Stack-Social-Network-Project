@@ -14,7 +14,7 @@ const PostItem = ({
   showActions
 }) => {
   return (
-    <div class="post bg-white p-1 my-1">
+    <div style={{marginTop: "6rem"}} class="post bg-white p-1 my-1">
       <div>
         <Link to={`/profile/${user}`}>
           <img class="round-img" src={avatar} alt="" />
